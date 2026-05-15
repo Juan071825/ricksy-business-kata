@@ -1,6 +1,6 @@
 package edu.teamrocket.ricksyBusiness.services;
 
-public class CrystalExpender {
+public class CrystalExpender implements GuestDispatcher {
     
 
     private Integer stock;
@@ -30,5 +30,5 @@ public class CrystalExpender {
         return expender.toString();
     }
 
-    
+
 }
