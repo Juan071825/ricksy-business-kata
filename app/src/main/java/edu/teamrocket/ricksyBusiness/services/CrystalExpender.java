@@ -1,5 +1,7 @@
 package edu.teamrocket.ricksyBusiness.services;
 
+import edu.teamrocket.ricksyBusiness.paymentMethods.CreditCard;
+
 public class CrystalExpender implements GuestDispatcher {
     
 
@@ -14,11 +16,20 @@ public class CrystalExpender implements GuestDispatcher {
 
 
     public Integer stock(){
-        return stock;
+        return this.stock;
     }
 
     public Integer itemCost(){
-        return itemCost;
+        return this.itemCost;
+    }
+
+    public void setStock(Integer unidades){
+        this.stock = this.stock - unidades;
+    }
+
+    public void dispatch(CreditCard card) {
+        card.pay(this.itemCost());
+        this.setStock(1);
     }
 
     public String toString(){
