@@ -25,6 +25,8 @@
 
 package edu.teamrocket.ricksyBusiness;
 
+import edu.teamrocket.ricksyBusiness.paymentMethods.*;
+
 public class App {
     
     public static void main(String[] args) {
