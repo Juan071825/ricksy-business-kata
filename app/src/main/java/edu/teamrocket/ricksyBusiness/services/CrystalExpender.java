@@ -4,18 +4,20 @@ public class CrystalExpender {
     
 
     private Integer stock;
-    private Double itemCost;
+    private Integer itemCost;
 
-    public CrystalExpender(Integer stock, Double itemCost){
+
+    public CrystalExpender(Integer stock, Integer itemCost){
         this.stock = stock;
         this.itemCost = itemCost;
     }
+
 
     public Integer stock(){
         return stock;
     }
 
-    public Double itemCost(){
+    public Integer itemCost(){
         return itemCost;
     }
 
@@ -28,4 +30,5 @@ public class CrystalExpender {
         return expender.toString();
     }
 
+    
 }
