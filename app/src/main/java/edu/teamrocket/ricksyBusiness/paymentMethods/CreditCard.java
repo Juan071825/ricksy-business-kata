@@ -6,7 +6,7 @@ public class CreditCard {
 
     private final String owner;
     private final String number;
-    private Integer credit;
+    private Double credit;
 
     
     public CreditCard(String owner, String number){
@@ -22,7 +22,7 @@ public class CreditCard {
         return this.owner;
     }
 
-    public Integer credit(){
+    public Double credit(){
         return this.credit;
     }
 
