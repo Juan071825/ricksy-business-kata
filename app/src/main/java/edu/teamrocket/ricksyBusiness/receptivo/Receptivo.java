@@ -4,11 +4,11 @@ public class Receptivo {
     
     private static Receptivo instance;
 
-    private Receptivo(){
+    public Receptivo(){
         this.getInstance();
     };
 
-    public Receptivo getInstance(){
+    private Receptivo getInstance(){
 
         if(instance == null){
             instance = new Receptivo();
