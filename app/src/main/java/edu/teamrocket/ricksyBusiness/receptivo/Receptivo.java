@@ -4,7 +4,9 @@ public class Receptivo {
     
     private static Receptivo instance;
 
-    private Receptivo(){};
+    private Receptivo(){
+        this.getInstance();
+    };
 
     public Receptivo getInstance(){
 
@@ -14,6 +16,6 @@ public class Receptivo {
         return instance;
     }
 
-    
+
 
 }
