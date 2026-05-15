@@ -1,7 +1,7 @@
 package edu.teamrocket.ricksyBusiness.paymentMethods;
 
 
-public class CreditCard {
+public class CreditCard implements PaymentMethod {
 
 
     private final String owner;
