@@ -14,14 +14,17 @@ public class CreditCard implements PaymentMethod {
         this.number = number;
     }
 
+    @Override
     public String number(){
         return this.number;
     }
 
+    @Override
     public String owner(){
         return this.owner;
     }
 
+    @Override
     public Double credit(){
         return this.credit;
     }

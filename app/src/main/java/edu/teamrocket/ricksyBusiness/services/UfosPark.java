@@ -1,9 +1,9 @@
-package edu.teamrocket.ricksyBusiness.paymentMethods;
+package edu.teamrocket.ricksyBusiness.services;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import edu.teamrocket.ricksyBusiness.services.GuestDispatcher;
+import edu.teamrocket.ricksyBusiness.paymentMethods.CreditCard;
 
 public class UfosPark implements GuestDispatcher{
     
@@ -28,7 +28,7 @@ public class UfosPark implements GuestDispatcher{
         card.pay(500);
 
         
-        
+
     }
 
 }

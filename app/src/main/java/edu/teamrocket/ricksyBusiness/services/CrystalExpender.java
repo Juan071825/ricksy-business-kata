@@ -27,6 +27,7 @@ public class CrystalExpender implements GuestDispatcher {
         this.stock = this.stock - unidades;
     }
 
+    @Override
     public void dispatch(CreditCard card) {
         card.pay(this.itemCost());
         this.setStock(1);
