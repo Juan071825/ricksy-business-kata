@@ -26,6 +26,13 @@ public class CreditCard {
         return this.credit;
     }
 
+    public Boolean pay(Double cost){
+        if(this.credit() - cost >= 0){
+            return true;
+        }
+        return false;
+    }
+
     public String toString(){
         StringBuilder card = new StringBuilder();
         card.append("El propietario de esta tarjeta es ");
