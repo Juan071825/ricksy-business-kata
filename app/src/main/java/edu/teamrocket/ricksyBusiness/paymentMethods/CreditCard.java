@@ -6,6 +6,7 @@ public class CreditCard {
 
     private final String owner;
     private final String number;
+    private Integer credit;
 
     
     public CreditCard(String owner, String number){
@@ -21,6 +22,10 @@ public class CreditCard {
         return this.owner;
     }
 
+    public Integer credit(){
+        return this.credit;
+    }
+
     public String toString(){
         StringBuilder card = new StringBuilder();
         card.append("El propietario de esta tarjeta es ");
@@ -29,5 +34,6 @@ public class CreditCard {
         card.append(number());
         return card.toString();
     }
+
 
 }
