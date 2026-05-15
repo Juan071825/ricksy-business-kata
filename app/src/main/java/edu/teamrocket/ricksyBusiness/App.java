@@ -27,6 +27,7 @@ package edu.teamrocket.ricksyBusiness;
 
 import edu.teamrocket.ricksyBusiness.paymentMethods.*;
 import edu.teamrocket.ricksyBusiness.services.*;
+import edu.teamrocket.ricksyBusiness.receptivo.*;
 
 public class App {
     
