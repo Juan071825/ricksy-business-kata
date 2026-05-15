@@ -21,6 +21,13 @@ public class CreditCard {
         return this.owner;
     }
 
-
+    public String toString(){
+        StringBuilder card = new StringBuilder();
+        card.append("El propietario de esta tarjeta es ");
+        card.append(owner());
+        card.append(" el id de la tarjeta es ");
+        card.append(number());
+        return card.toString();
+    }
 
 }
