@@ -7,4 +7,5 @@ public interface PaymentMethod {
 
     public String number();
     
+    public Integer credit();
 }
