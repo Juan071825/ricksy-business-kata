@@ -30,7 +30,7 @@ public class CreditCard implements PaymentMethod {
     }
 
     public Boolean pay(Double cost){
-        if(credit - cost >= 0){
+        if(this.credit - cost >= 0){
             this.credit -=  cost;
             return true;
         }
