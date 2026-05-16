@@ -29,8 +29,10 @@ public class CrystalExpender implements GuestDispatcher {
 
     @Override
     public void dispatch(CreditCard card) {
-        card.pay(this.itemCost());
-        this.setStock(1);
+        if(stock() > 0 && card.credit() >= itemCost()){
+            card.pay(this.itemCost());
+            this.setStock(1);
+        }
     }
 
     public String toString(){
