@@ -6,7 +6,7 @@ public class CreditCard implements PaymentMethod {
 
     private final String owner;
     private final String number;
-    private Double credit;
+    private Double credit = 3000.00;
 
     
     public CreditCard(String owner, String number){
