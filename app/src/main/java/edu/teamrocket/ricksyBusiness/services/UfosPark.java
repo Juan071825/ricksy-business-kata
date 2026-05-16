@@ -10,10 +10,7 @@ import edu.teamrocket.ricksyBusiness.paymentMethods.CreditCard;
 
 public class UfosPark implements GuestDispatcher{
     
-    private Integer free;
     private Map<String, String> fleet = new HashMap<>();
-    private String ovni;
-    private String card;
 
 
     public UfosPark(){};
