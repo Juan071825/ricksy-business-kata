@@ -38,15 +38,16 @@ public class UfosPark implements GuestDispatcher{
             }
         }
 
-        if(freeUfos.size() > 0 && card.pay(500) == true){
+        if(freeUfos.size() > 0 && card.credit() >= 500.0){
+            card.pay(500.0);
             Integer freeUfoIndex = ThreadLocalRandom.current().nextInt(0, freeUfos.size());
             getFleet().replace(getFleet().get(freeUfos.get(freeUfoIndex)), null, card.owner());
         }
     }
 
-    public String getUfoOf(String name){
+    public String getUfoOf(String number){
         for(Map.Entry<String, String> ufo : getFleet().entrySet()){
-            if(ufo.getValue() == name){
+            if(ufo.getValue() == number){
                 return ufo.getKey();
             }
         }
