@@ -11,9 +11,7 @@ public class Receptivo {
     private UfosPark ufosPark;
     private CrystalExpender crystalExpender;
 
-    public Receptivo(){
-        this.getInstance();
-    };
+    public Receptivo(){};
 
     private Receptivo getInstance(){
 
