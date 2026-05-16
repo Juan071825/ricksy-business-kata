@@ -6,7 +6,7 @@ public class CreditCard implements PaymentMethod {
 
     private final String owner;
     private final String number;
-    private Double credit = 3000.00;
+    private Double credit = 3000.0;
 
     
     public CreditCard(String owner, String number){
@@ -30,14 +30,16 @@ public class CreditCard implements PaymentMethod {
     }
 
     public Boolean pay(Double cost){
-        if(this.credit() - cost >= 0){
+        if(credit - cost >= 0){
+            this.credit -=  cost;
             return true;
         }
         return false;
     }
 
     public Boolean pay(Integer cost){
-        if(this.credit() - cost >= 0){
+        if(credit() - cost >= 0){
+            this.credit -=  cost;
             return true;
         }
         return false;
